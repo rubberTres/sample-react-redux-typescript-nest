@@ -1,0 +1,49 @@
+.single-streamer {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	color: #0c0f0a;
+
+	&__content {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+		padding-top: 25px;
+	}
+
+	&__back-button {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+	}
+
+	&__name {
+		font-size: 50px;
+	}
+
+	&__image {
+		border-radius: 50%;
+	}
+
+	&__dropdown {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__dropdown-body {
+		position: absolute;
+		display: none;
+		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+		top: calc(100% + 10px);
+
+		&--open {
+			display: flex;
+		}
+	}
+}

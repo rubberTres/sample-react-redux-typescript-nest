@@ -1,0 +1,38 @@
+.button {
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	text-align: center;
+	border-radius: 4px;
+	transition: .1s background-color ease-in;
+	color: white;
+	font-weight: 500;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&--success {
+		background-color: #06d6a0;
+
+		&:hover {
+			background-color: lighten(#06d6a0, 5%);
+		}
+	}
+
+	&--danger {
+		background-color: #ef476f;
+
+		&:hover {
+			background-color: lighten(#ef476f, 5%);
+		}
+	}
+
+	&--primary {
+		background-color: #118ab2;
+
+		&:hover {
+			background-color: lighten(#118ab2, 5%);
+		}
+	}
+}
